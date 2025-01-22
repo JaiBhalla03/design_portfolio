@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 function Hero() {
   return (
-    <div className="h-screen bg-[#0d0d0d] relative rounded-b-3xl overflow-hidden">
+    <div className="text-white h-screen bg-[#0d0d0d] relative rounded-b-3xl overflow-hidden">
       <Image
         src={hero}
         alt=""
