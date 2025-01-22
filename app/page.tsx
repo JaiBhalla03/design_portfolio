@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <div>
+    <div className='relative font-poppins'>
       <Navbar/>
       <Hero/>
       <About/>
