@@ -28,7 +28,7 @@ function Contact() {
       whileInView="visible"
       viewport={{ once: true }}
       variants={containerVariants}
-      className="pt-32 px-12"
+      className="pt-32 px-2 md:px-12"
     >
       {/* Call-to-Action Button */}
       <motion.div variants={itemVariants} className="flex justify-center w-full">
@@ -54,8 +54,8 @@ function Contact() {
       </motion.div>
 
       {/* Links and Contact Section */}
-      <motion.div variants={itemVariants} className="py-4 border-b-2 border-gray-200 flex items-center justify-between text-sm">
-        <ul className="flex items-center gap-20">
+      <motion.div variants={itemVariants} className="py-4 border-b-2 border-gray-200 flex flex-col md:flex-row items-center justify-between text-sm">
+        <ul className="flex flex-col md:flex-row items-center gap-20">
           <li>Facebook</li>
           <li>Linkedin</li>
           <li>Instagram</li>

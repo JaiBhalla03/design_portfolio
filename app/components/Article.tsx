@@ -42,7 +42,7 @@ function Article() {
       {/* Article Cards */}
       <motion.div
         variants={containerVariants}
-        className="flex w-full justify-between pt-10"
+        className="flex flex-col md:flex-row w-full justify-between pt-10"
       >
         <motion.div variants={itemVariants}>
           <ArticleCard
