@@ -22,7 +22,7 @@ function Hero() {
           src={hero}
           alt=""
           width={750}
-          className="absolute left-1/2 -translate-x-1/2 -top-32"
+          className="hidden md:flex absolute left-1/2 -translate-x-1/2 -top-32"
         />
       </motion.div>
     
@@ -52,8 +52,8 @@ function Hero() {
         className="absolute bottom-10 right-0 w-[500px] h-[300px] bg-gradient-to-r from-[#eb2626] to-[#BABC77] blur-3xl -rotate-[20deg] rounded-[30rem]"
       ></motion.div>
 
-      <div className="absolute left-0 top-0 px-12 w-full flex justify-between items-center h-full">
-        <div className="flex flex-col gap-10 w-[25rem]">
+      <div className="absolute left-0 top-0 px-2 md:px-12 w-full flex flex-col-reverse md:flex-row justify-center md:justify-between items-center h-full gap-8 md:gap-0">
+        <div className="flex flex-col gap-10 w-full md:w-[25rem]">
           <motion.p
             initial={{x: -500, opacity: 0, rotate: -45}}
             animate={{x:0, opacity: 1, rotate: 0}}
@@ -62,10 +62,11 @@ function Hero() {
               ease: 'easeInOut',
               delay: 1.2
             }}
+            className='text-sm md:text-xl'
           >
             Through innovative design and strategic thinking we create brands that spark connections, inspire loyalty, and elevate your message.
           </motion.p>
-          <motion.div className="border border-yellow-200 border-dashed p-1 w-48"
+          <motion.div className="border border-yellow-200 border-dashed p-1 w-48 mx-auto md:mx-0"
             initial={{x: -500, opacity: 0, rotate: -45}}
             animate={{x:0, opacity: 1, rotate: 0}}
             transition={{
@@ -76,7 +77,7 @@ function Hero() {
           >
             <Image src={hero1} alt="" width={200} />
           </motion.div>
-          <motion.button className="w-40 text-md bg-white p-2 text-black mt-12"
+          <motion.button className="w-40 text-md bg-white p-2 text-black mt-12 mx-auto md:mx-0"
             initial={{x: -500, opacity: 0, rotate: -45}}
             animate={{x:0, opacity: 1, rotate: 0}}
             transition={{
@@ -88,9 +89,9 @@ function Hero() {
             LET'S CONTACT
           </motion.button>
         </div>
-        <div className="w-[35rem] font-[800] text-[4.5rem] text-left leading-[5rem]">
+        <div className="w-full md:w-[35rem] font-[800] text-4xl md:text-[4.5rem] text-left leading-[3rem] md:leading-[5rem]">
           <motion.div 
-            className="flex justify-end"
+            className="flex justify-center md:justify-end"
             initial={{x: 500, opacity: 0, rotate: -45}}
             animate={{x:0, opacity: 1, rotate: 0}}
             transition={{
@@ -100,7 +101,7 @@ function Hero() {
             }}
             >CREATING</motion.div>
           <motion.div 
-            className="flex justify-end"
+            className="flex justify-center md:justify-end"
             initial={{x: 500, opacity: 0, rotate: -45}}
             animate={{x:0, opacity: 1, rotate: 0}}
             transition={{
@@ -110,7 +111,7 @@ function Hero() {
             }}
             >BRANDS THAT</motion.div>
           <motion.div 
-            className="flex justify-end"
+            className="flex justify-center md:justify-end"
             initial={{x: 500, opacity: 0, rotate: -45}}
             animate={{x:0, opacity: 1, rotate: 0}}
             transition={{
@@ -120,7 +121,7 @@ function Hero() {
             }}
             >CONNECT AND</motion.div>
           <motion.div 
-            className="flex justify-end"
+            className="flex justify-center md:justify-end"
             initial={{x: 500, opacity: 0, rotate: -45}}
             animate={{x:0, opacity: 1, rotate: 0}}
             transition={{

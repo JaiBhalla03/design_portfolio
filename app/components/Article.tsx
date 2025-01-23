@@ -32,10 +32,10 @@ function Article() {
       whileInView="visible"
       viewport={{ once: true }}
       variants={containerVariants}
-      className="pt-20 px-12"
+      className="pt-10 md:pt-20 px-2 md:px-12"
     >
       {/* Header Section */}
-      <motion.div variants={itemVariants} className="text-[3rem] font-[500]">
+      <motion.div variants={itemVariants} className="text-2xl md:text-[3rem] font-[500]">
         LATEST ARTICLE
       </motion.div>
 

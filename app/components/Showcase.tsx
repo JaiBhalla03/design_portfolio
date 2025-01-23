@@ -14,7 +14,7 @@ function Showcase() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
       viewport={{ once: true }}
-      className="pt-20 px-12"
+      className="pt-10 md:pt-20 px-2 md:px-12"
     >
       {/* Header Section */}
       <motion.div
@@ -24,13 +24,13 @@ function Showcase() {
         viewport={{ once: true }}
         className="flex flex-col md:flex-row w-full justify-between items-center"
       >
-        <div className="text-[3rem] font-[500]">FASHION SHOWCASE</div>
+        <div className="text-2xl md:text-[3rem] font-[500]">FASHION SHOWCASE</div>
         <div className="text-lg">VIEW ALL</div>
       </motion.div>
 
       {/* Cards Section */}
       <motion.div
-        className="flex flex-col md:flex-row w-full justify-between pt-20"
+        className="flex flex-col md:flex-row w-full justify-between pt-10 md:pt-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

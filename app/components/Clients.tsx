@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 function Clients() {
   return (
-    <div className='px md:px-12 pt-20'>
-        <div className='text-[3rem] font-[500]'>CLIENTS FEEDBACK</div>
+    <div className='px-2 md:px-12 pt-10 md:pt-20'>
+        <div className='text-2xl md:text-[3rem] font-[500]'>CLIENTS FEEDBACK</div>
         <div className='flex justify-between w-full items-center'>
             <button className='hidden p-6 md:flex items-center justify-center bg-gray-100 rounded-full'>
                 <IoMdArrowBack  size={20} className='text-gray-400'/>
             </button>
             <div className='px-4 md:px-24 py-10 flex flex-col gap-4'>
-                <div className='text-3xl font-[400] text-center'>"Great experience from start to finish. The team understood our needs perfectly and delivered excellent results. We're thrilled with the outcome!"</div>
-                <div className='text-lg text-center'>
+                <div className='text-xl md:text-3xl font-[400] text-center'>"Great experience from start to finish. The team understood our needs perfectly and delivered excellent results. We're thrilled with the outcome!"</div>
+                <div className='text-sm md:text-lg text-center'>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
                 </div>
                 <div className='flex justify-center gap-2'>

@@ -28,11 +28,11 @@ function Contact() {
       whileInView="visible"
       viewport={{ once: true }}
       variants={containerVariants}
-      className="pt-32 px-2 md:px-12"
+      className="pt-20 md:pt-32 px-2 md:px-12"
     >
       {/* Call-to-Action Button */}
       <motion.div variants={itemVariants} className="flex justify-center w-full">
-        <button className="bg-black text-white w-[30rem] text-[3rem] font-semibold p-4 rounded-full">
+        <button className="bg-black text-white w-[20rem] md:w-[30rem] text-4xl md:text-[3rem] font-semibold p-4 rounded-full">
           LET'S TALK
         </button>
       </motion.div>
@@ -54,8 +54,8 @@ function Contact() {
       </motion.div>
 
       {/* Links and Contact Section */}
-      <motion.div variants={itemVariants} className="py-4 border-b-2 border-gray-200 flex flex-col md:flex-row items-center justify-between text-sm">
-        <ul className="flex flex-col md:flex-row items-center gap-20">
+      <motion.div variants={itemVariants} className="py-4 border-b-2 border-gray-200 flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between text-sm">
+        <ul className="flex flex-col md:flex-row items-center gap-4 md:gap-20">
           <li>Facebook</li>
           <li>Linkedin</li>
           <li>Instagram</li>
